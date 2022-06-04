@@ -1,0 +1,44 @@
+[
+  {
+    "position": [0, 0],
+    "speed": [0, 0],
+    "color": "#ffdd00",
+    "size": 50,
+    "density": 10
+  },
+  {
+    "position": [0, 100],
+    "speed": [-18, 0],
+    "color": "#ffffdd",
+    "size": 5,
+    "density": 0.1
+  },
+  {
+    "position": [0, 200],
+    "speed": [-12.5, 0],
+    "color": "#ffcc44",
+    "size": 5,
+    "density": 0.1
+  },
+  {
+    "position": [0, -300],
+    "speed": [10, 0],
+    "color": "#00bbff",
+    "size": 10,
+    "density": 1
+  },
+  {
+    "position": [0, -275],
+    "speed": [12.5, 0],
+    "color": "#cccccc",
+    "size": 3,
+    "density": 0.5
+  },
+  {
+    "position": [0, -400],
+    "speed": [9, 0],
+    "color": "#ff3300",
+    "size": 5,
+    "density": 0.1
+  }
+]

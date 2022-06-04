@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="vector2.js"></script>
+    <script src="menu.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="menu">
+      <div id="menu-hide-button">
+        <svg viewbox="0 0 100 100">
+          <line id="line1" x1="10" y1="90" x2="90" y2="10" />
+          <line id="line2" x1="10" y1="10" x2="90" y2="90" />
+        </svg>
+      </div>
+
+      <div id="menu-inputs">
+        <label>Color</label>
+        <input id="menu-color" type="color" value="#ffffff" />
+
+        <label>Size</label>
+        <input id="menu-size" min="1" max="100" value="20" type="number" />
+
+        <label>Density</label>
+        <input
+          id="menu-density"
+          type="number"
+          min="0.1"
+          max="10"
+          value="1"
+          step="0.1"
+        />
+
+        <label>Launching resistance</label>
+        <input id="menu-speed" min="10" max="50" value="30" type="number" />
+
+        <label>Gravitational constant</label>
+        <input id="menu-grav" min="1" max="20" value="4" type="number" />
+
+        <label>Time control</label>
+        <input
+          id="menu-time"
+          type="number"
+          min="0.1"
+          max="10"
+          value="1"
+          step="0.1"
+        />
+
+        <label>Zoom Scale</label>
+        <input
+          id="menu-zoom"
+          type="number"
+          min="0.1"
+          max="10"
+          value="1"
+          step="0.1"
+        />
+        <div>
+          <label>Off border</label>
+          <input class="menu-border" type="radio" name="off-border" />
+          <label class="radio-label">Delete</label>
+          <input class="menu-border" type="radio" name="off-border" />
+          <label class="radio-label">Wall hit</label>
+          <input class="menu-border" type="radio" name="off-border" checked />
+          <label class="radio-label">None</label>
+        </div>
+
+        <div>
+          <label>On collision</label>
+          <input class="menu-collision" type="radio" name="on-collision" />
+          <label class="radio-label">Sum</label>
+          <input class="menu-collision" type="radio" name="on-collision" />
+          <label class="radio-label">Delete both</label>
+          <input
+            class="menu-collision"
+            type="radio"
+            name="on-collision"
+            checked
+          />
+          <label class="radio-label">None</label>
+        </div>
+      </div>
+    </div>
+    <canvas id="canvas" height="1500" width="1500"></canvas>
+  </body>
+</html>
